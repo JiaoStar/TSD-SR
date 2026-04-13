@@ -1,2 +1,2 @@
 # TSD-SR
-The code will be released soon.
+please clone the recbole repository, and move the tsdsr.py under the recbole/model/sequential_recommender folder
