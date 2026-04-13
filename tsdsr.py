@@ -21,7 +21,7 @@ class FrequencyLayer(nn.Module):
 
 
     def forward(self, input_tensor):
-        # AIGC START
+        
         batch, seq_len, hidden = input_tensor.shape
         
         # 检查序列长度是否有效（FFT 需要至少 2 个元素）
@@ -66,7 +66,7 @@ class FrequencyLayer(nn.Module):
                 return hidden_states
             else:
                 raise e
-        # AIGC END
+      
         
 
 class TVRecGFTFrequencyLayer(nn.Module):
