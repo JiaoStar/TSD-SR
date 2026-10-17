@@ -1,0 +1,26 @@
+n_layers: 2
+n_heads: 2
+hidden_size: 256
+attribute_hidden_size: [256, 256]
+inner_size: 256
+hidden_dropout_prob: 0.5
+attn_dropout_prob: 0.3
+hidden_act: 'gelu'
+layer_norm_eps: 1e-12
+initializer_range: 0.02
+selected_features: ['categories', 'brand']
+pooling_mode: 'sum'
+loss_type: 'CE'
+fusion_type: 'gate'
+lamdas: [10]
+attribute_predictor: 'linear'
+lambda: 20.0
+align: True
+c: 5
+alpha: 0.3
+M: 16
+K: 50
+reg_weight: 1e-3
+orthogonal_reg_weight: 1e-3
+use_item_gft: True
+use_attribute_gft: True
